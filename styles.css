@@ -1,19 +1,65 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: cornsilk;
+  margin: 80px;
+}
+
 h1 {
   color: darkblue;
   text-align: center;
+  text-decoration: underline;
 }
 
 p {
-  color: green;
-  font-size: 18px;
+  color: lightseagreen;
+  font-size: 16px;
 }
 
-.container {
-  background-color: lightgray;
-  padding: 20px;
+a {
+  color: gold;
+  text-decoration: underline;
+}
+
+a:hover {
+  font-style: italic;
+  color: crimson;
+}
+
+a:visited {
+  text-decoration: line-through;
+  text-decoration-color: black;
+}
+
+form {
+  background-color: darksalmon;
+  color: blueviolet;
+  padding: 50px;
+  padding-top: 20px;
+}
+
+.content {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+input,
+textarea,
+button {
+  padding: 1%;
+  width: fit-content;
+}
+
+input:focus,
+textarea:focus {
+  border-color: black;
+  box-shadow: inset;
+}
+
+button {
+  cursor: crosshair;
   border: 1px solid black;
 }
 
-body {
-  background-color: chocolate;
+button:hover {
+  background-color: deeppink;
 }
