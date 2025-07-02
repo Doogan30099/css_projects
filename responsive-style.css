@@ -1,7 +1,9 @@
+/* Basic layout */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
 header,
 nav,
 main,
@@ -10,6 +12,7 @@ footer {
   padding: 20px;
   color: white;
 }
+
 .header {
   background-color: darkblue;
 }
@@ -27,15 +30,39 @@ footer {
 .footer {
   background-color: darkslategray;
 }
+
 body {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
+
 main {
   display: flex;
   flex: 1;
 }
-custom-text-shadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+/* Add transition to buttons */
+button {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column;
+  }
 }
